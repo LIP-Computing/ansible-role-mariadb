@@ -1,5 +1,5 @@
 ---
 mysql_conf_file: "99-openstack.cnf"
-mysql_conf_tpl: "{{ 99-openstack.cnf }}.j2"
+mysql_conf_tpl: "{{ mysql_conf_file }}.j2"
 
 mysql_secure_installation: false

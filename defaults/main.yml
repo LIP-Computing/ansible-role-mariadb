@@ -1,7 +1,5 @@
 ---
-mariadb_version: 10.0
-
-mysql_conf_tpl: change_me
-mysql_conf_file: settings.cnf
+mysql_conf_file: "99-openstack.cnf"
+mysql_conf_tpl: "{{ 99-openstack.cnf }}.j2"
 
 mysql_secure_installation: false

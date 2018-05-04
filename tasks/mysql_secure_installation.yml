@@ -45,3 +45,4 @@
   with_items:
     - FLUSH PRIVILEGES
   changed_when: False
+

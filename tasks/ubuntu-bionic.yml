@@ -1,0 +1,11 @@
+---
+- name: Update apt cache
+  apt: update_cache=yes
+
+- name: Unattended package installation
+  shell: export DEBIAN_FRONTEND=noninteractive
+  changed_when: false
+
+- name: Install MariaDB
+  apt: pkg=mariadb-server state=present
+

@@ -9,3 +9,5 @@
 - name: Install MariaDB
   apt: pkg=mariadb-server state=present
 
+- name: Install python-mysql connector
+  apt: pkg=python-mysqldb state=present
